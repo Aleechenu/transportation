@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAILWAY_BOOKING</title>
+    <link rel="shortcut icon" href="/static/pictures/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <!-- <a href="/system"><button >back</button></a> -->
+<div class="std_reg">
+        <a href=""><img src="/static/pictures/logo.png" class="logo" alt="home button"></a>
+        <a href="/system" ><button class="clue"><span>back <br>&#8594 &#8594</span></button></a>
+
+        <center><br>
+          
+        <h1 style="font-size: 5vh; text-decoration: underline;">DO YOUR BOOKINGS.</h1>
+        <form action="/trvl_d" method="POST">
+            <h2 class="flask" style="padding-top: 5%;">WELCOME <b> -- </b><u style="text-transform: uppercase;">{{verify.name}}</u><br><br></h2>
+        <br>
+        <br>
+            <input type="text" class="box"  name="traveller_name" placeholder="traveller_name" required>
+            <br><br>
+            <input type="text" class="box"  name="from_where" placeholder="from_where" required>
+            <br><br>
+            <input type="text"class="box"  name="to_where" placeholder="to_where" required>
+            <br><br>
+            <input type="date" class="bos" style="border-radius: 9px;"  name="departure_time" required>
+            <br><br>
+            <input type="submit" class="box" value="submit" required>
+            <br><br>
+        </center>
+        </form>
+    </div><hr style="background-color:2px black;">
+       <div class="student">
+        <center>
+            <p class="p_tag">Do you have error in your details.. please contact the admin</p><br><a href="/range" ><button class="reg">Admin</button></a><br>
+        </center>
+           <br>
+    </div>
+    <div class="footer">
+        <center><h2 style="color: black;">YOUR JOURNEY IS IN GODS HAND...</h2></center>
+        <center><p><b> </p></center>
+    </div>
+           
+</body>
+</html>
